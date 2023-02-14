@@ -1,9 +1,10 @@
-import ProductsContext from '../context/ProductProvider'
-import { useContext } from 'react'
+import useCart from '../hooks/useCart'
+import useProducts from '../hooks/useProducts'
 import Product from './Product'
 const Products = () => {
-  const { products } = useContext(ProductsContext)
-  console.log(products)
+  const { products } = useProducts()
+  const { cart } = useCart()
+  console.log(cart)
   const productsEle = products.map((product) => {
     return <Product key={product.sku} product={product} />
   })

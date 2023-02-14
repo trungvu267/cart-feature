@@ -1,6 +1,5 @@
-import React from 'react'
 import orderImage from '../assets/products/apple-watch.png'
-const Carts = () => {
+const Cart = () => {
   return (
     <div className="w-full max-w-md mx-auto sm:pt-48 p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
       <div className="flex items-center justify-between mb-4 ">
@@ -135,4 +134,4 @@ const Carts = () => {
   )
 }
 
-export default Carts
+export default Cart
